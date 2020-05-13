@@ -5,53 +5,50 @@
       color="primary"
       dark
     >
+      <v-btn
+        href="/"
+        text
+      >
       <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
+        <v-icon class="mr-2">fa fa-bible</v-icon>
+        <span> Bookshelf</span>
+          <!-- <i class="large fas fa-bible"></i> -->
+          
+        </div>  
+      </v-btn>
+    
       <v-spacer></v-spacer>
 
       <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        href="https://github.com/zwsnail/bookshelf_backend"
         target="_blank"
         text
       >
-        <span class="mr-2">Latest Release</span>
+        <span class="mr-2">FIND IN github</span>
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
     </v-app-bar>
 
     <v-content>
-      <HelloWorld/>
+      <!-- <category/> -->
+
+          <router-view></router-view>
     </v-content>
+
   </v-app>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+// import HelloWorld from './components/HelloWorld.vue';
+// import category from './views/Category.vue';
 
 export default Vue.extend({
   name: 'App',
 
   components: {
-    HelloWorld,
+    // HelloWorld,
+    // category,
   },
 
   data: () => ({
@@ -59,3 +56,10 @@ export default Vue.extend({
   }),
 });
 </script>
+
+<style>
+.i {
+  font-size: 5px;
+}
+  
+</style>

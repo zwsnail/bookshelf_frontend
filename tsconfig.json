@@ -1,8 +1,18 @@
 {
   "compilerOptions": {
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules/vuetify/types",
+      "./node_modules/vue-apollo/types"
+    ],
+
     "target": "esnext",
     "module": "esnext",
-    "strict": true,
+    // "strict": true,
+    "allowJs": true,
+    "strict": false,
+
+
     "jsx": "preserve",
     "importHelpers": true,
     "moduleResolution": "node",
@@ -12,7 +22,9 @@
     "sourceMap": true,
     "baseUrl": ".",
     "types": [
-      "webpack-env"
+      "webpack-env",
+      "vuetify",
+      "vue-cli-plugin-apollo/types"
     ],
     "paths": {
       "@/*": [
